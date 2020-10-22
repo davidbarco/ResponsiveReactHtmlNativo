@@ -13,7 +13,7 @@ body{
     width: 100%;
     background: white;
     border-bottom: 1px solid #ccc;
-    border-top: 5px solid #61dafb;
+    border-top: 5px solid #3fb984;
 }
 .center{
     width: 75%;
@@ -36,15 +36,15 @@ body{
     margin-top: -10px;
     margin-right: -10px;
     /* animacion y creamos los keyframes */
-    animation: girar infinite 5s linear;
+    animation: latir infinite 1s linear;
 }
 
-@keyframes girar {
+@keyframes latir {
    from{
-       transform: rotate(0deg)
+       transform:scale(1,1)
    }
    to{
-    transform: rotate(360deg)
+    transform: scale(0.9, 0.9)
    }
 }
 
@@ -53,6 +53,7 @@ body{
     display: block;
     margin: 0px;
     float: left;
+    margin-left: 9px;
 }
 #menu{
     width: 70%;
@@ -78,7 +79,7 @@ body{
     margin-right: 15px; 
 }
 #menu a:hover{
-    color: #4596ac
+    color:#3fb984 ;
 }
 #slider{
     width: 100%;
@@ -86,8 +87,9 @@ body{
     
     color: white;
     text-shadow: 0px 0px 5px #444;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 8%, rgba(0,212,255,1) 45%); 
+    background: rgb(63,185,132);
+    background: linear-gradient(90deg, rgba(63,185,132,1) 0%, rgba(49,71,94,1) 0%, rgba(63,185,132,1) 20%); 
+
 }
 #slider h1{
     margin: 0px;
@@ -363,4 +365,10 @@ textarea{
         margin: 0px auto;
     }
     
+}
+
+@media (max-width: 1067px){
+    #logo{
+        display: flex;
+    }
 }
